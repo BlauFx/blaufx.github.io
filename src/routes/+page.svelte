@@ -6,7 +6,7 @@
     import SocialMedia from "./SocialMedia.svelte";
 
 
-    let name = ""; //, BlauFx";
+    let name = "";
     let num = name.length;
     let textToDisplay = name;
     let increment = false;
@@ -32,7 +32,7 @@
 
 <svelte:window on:load|once={() => writer}></svelte:window>
 
-<Background />
+
 <!-- <img alt="BlauFx's logo" src="1-sw.png" />-->
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -52,24 +52,23 @@
         <Text />
     </p>
         <SocialMedia />
- </div>
- <button class="btn" id="loginBtn" onclick="loginBtn()">Login</button>
+</div>
 
- <style>
+<button class="btn" id="loginBtn">Login</button>
+<Background />
+
+<style>
+
     body {
     background-color: #323232;
     color: #ebf1ff;
     text-align: center;
     overflow-y: auto;
-}
+    }
 
 .top-container {
     display: flex;
     flex-direction: column;
-    /*position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);*/
 }
 
 .container {
@@ -359,4 +358,4 @@ b {
   }
 }
 
- </style>
+</style>
